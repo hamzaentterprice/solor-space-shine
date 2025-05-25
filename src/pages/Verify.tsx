@@ -21,7 +21,7 @@ const Verify = () => {
           
           <div className="mb-8 text-center">
             <img
-              src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=200&fit=crop"
+              src="https://cs.jinkosolar.com/app/assets/tipPIC-BKtbCB82.jpg"
               alt="Serial number barcode example"
               className="mx-auto rounded-lg shadow-md"
             />
