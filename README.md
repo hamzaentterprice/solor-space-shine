@@ -1,73 +1,130 @@
-# Welcome to your Lovable project
 
-## Project info
+# JinkoSolar Website
 
-**URL**: https://lovable.dev/projects/1e737ab0-06c8-41d1-88a5-e98153ab0216
+A modern, responsive website for JinkoSolar featuring product showcase, verification system, and comprehensive company information.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- **Responsive Design**: Mobile-first approach with seamless desktop experience
+- **Product Verification**: Serial number verification system with visual feedback
+- **Modern UI**: Clean design using Tailwind CSS and shadcn/ui components
+- **SEO Optimized**: Proper meta tags, semantic HTML, and accessibility features
+- **Multi-page Navigation**: Home, Shop, Verify, and Contact pages
+- **Interactive Components**: Hero sections, product cards, forms, and tips sections
 
-**Use Lovable**
+## Technologies Used
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1e737ab0-06c8-41d1-88a5-e98153ab0216) and start prompting.
+- **React 18** with TypeScript
+- **Vite** for fast development and building
+- **Tailwind CSS** for styling
+- **shadcn/ui** for component library
+- **React Router** for navigation
+- **Lucide React** for icons
+- **React Hook Form** for form handling
 
-Changes made via Lovable will be committed automatically to this repo.
+## Project Structure
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+src/
+├── components/           # Reusable UI components
+│   ├── ui/              # shadcn/ui components
+│   ├── Layout.tsx       # Main layout wrapper
+│   ├── Navbar.tsx       # Navigation component
+│   ├── Footer.tsx       # Footer component
+│   ├── Hero.tsx         # Hero section component
+│   ├── ProductCard.tsx  # Product display component
+│   ├── TipsSection.tsx  # Tips display component
+│   └── VerificationForm.tsx # Product verification form
+├── pages/               # Page components
+│   ├── Index.tsx        # Homepage
+│   ├── Home.tsx         # Homepage content
+│   ├── Shop.tsx         # Products page
+│   ├── Verify.tsx       # Verification page
+│   ├── Contact.tsx      # Contact page
+│   └── NotFound.tsx     # 404 page
+├── hooks/               # Custom React hooks
+├── lib/                 # Utility functions
+└── main.tsx            # Application entry point
 ```
 
-**Edit a file directly in GitHub**
+## Getting Started
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Prerequisites
 
-**Use GitHub Codespaces**
+- Node.js 18+ and npm
+- Git
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Installation
 
-## What technologies are used for this project?
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd jinkosolar-website
+   ```
 
-This project is built with:
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-## How can I deploy this project?
+4. Open your browser and navigate to `http://localhost:8080`
 
-Simply open [Lovable](https://lovable.dev/projects/1e737ab0-06c8-41d1-88a5-e98153ab0216) and click on Share -> Publish.
+### Building for Production
 
-## Can I connect a custom domain to my Lovable project?
+```bash
+npm run build
+```
 
-Yes, you can!
+The built files will be in the `dist` directory.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Preview Production Build
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+```bash
+npm run preview
+```
+
+## Design Features
+
+- **Brand Colors**: Green and blue palette matching JinkoSolar branding
+- **Typography**: Inter font family for modern, clean text
+- **Animations**: Smooth hover effects and transitions
+- **Accessibility**: ARIA labels, semantic HTML, and keyboard navigation
+- **Performance**: Lazy loading images and optimized components
+
+## Key Components
+
+### Hero Component
+Reusable hero section with customizable title, subtitle, and call-to-action button.
+
+### ProductCard Component
+Displays product information with image, title, description, and action button.
+
+### VerificationForm Component
+Interactive form for product serial number verification with success feedback.
+
+### TipsSection Component
+Two-column layout for displaying solar energy tips with accompanying imagery.
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## License
+
+© 2024 JinkoSolar. All rights reserved.
