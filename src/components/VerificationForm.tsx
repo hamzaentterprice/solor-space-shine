@@ -57,7 +57,7 @@ export const VerificationForm = () => {
             
             <div className="flex justify-between py-3 border-b border-gray-600">
               <span className="text-gray-400">Importer Name</span>
-              <span className="text-white">IRI Traders</span>
+              <span className="text-white">Green Solars and Tube well Services</span>
             </div>
             
             <div className="flex justify-between py-3 border-b border-gray-600">
@@ -336,7 +336,7 @@ export const VerificationForm = () => {
           </div>
 
           <div>
-            <Label htmlFor="verificationCode">Verification Code</Label>
+            <Label htmlFor="verificationCode">Verification Code                      Your Code is 1546</Label>
             <Input
               id="verificationCode"
               type="text"
