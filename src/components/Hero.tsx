@@ -13,7 +13,7 @@ export const Hero = ({
   title, 
   subtitle, 
   buttonText, 
-  backgroundImage = "/assets/verificaation-page-banner.jpg", // Updated path
+  backgroundImage = "/lovable-uploads/676a050d-7f64-4242-beb4-69daecccde03.png", // Updated to new banner
   onButtonClick 
 }: HeroProps) => {
   return (

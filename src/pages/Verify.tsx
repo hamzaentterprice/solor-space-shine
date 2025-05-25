@@ -8,7 +8,7 @@ const Verify = () => {
       <Hero
         title="SEARCH PRODUCT SN"
         subtitle="Verify the authenticity of your JinkoSolar product"
-        backgroundImage="/lovable-uploads/f9752695-59a6-482b-925b-74744faa3a29.png"
+        backgroundImage="/lovable-uploads/cdd70945-744f-48c3-9abf-29e17cb83204.png"
       />
       
       <section className="py-16 bg-gray-50">
