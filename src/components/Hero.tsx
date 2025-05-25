@@ -21,7 +21,7 @@ export const Hero = ({
       className="relative h-96 flex items-center justify-center bg-cover bg-center"
       // style={{ backgroundImage: `url(${backgroundImage})` }}
 
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      style={{ backgroundImage: `./components/assets/verificaation-page-banner.jpg` }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/70 to-blue-800/70"></div>
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
