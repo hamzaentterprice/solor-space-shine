@@ -335,8 +335,8 @@ export const VerificationForm = () => {
             />
           </div>
 
-          {/* <div>
-            <Label htmlFor="verificationCode">Verification Code                      Your Code is 1546</Label>
+          <div>
+            <Label htmlFor="verificationCode">Verification Code</Label>
             <Input
               id="verificationCode"
               type="text"
@@ -345,7 +345,7 @@ export const VerificationForm = () => {
               onChange={(e) => setVerificationCode(e.target.value)}
               required
             />
-          </div> */}
+          </div>
 
           <Button 
             type="submit" 
