@@ -26,66 +26,82 @@ export const VerificationForm = () => {
 
   if (isVerified) {
     return (
-      <Card className="max-w-2xl mx-auto">
-        <CardHeader className="text-center">
-          <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-            <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-            </svg>
-          </div>
-          <CardTitle className="text-xl font-semibold text-green-600">Verification Successful!</CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-            <div className="flex justify-between py-2 border-b border-gray-200">
-              <span className="text-gray-600">Country</span>
-              <span className="font-medium">Pakistan</span>
+      <div className="min-h-screen bg-gray-800 text-white">
+        {/* Hero Section */}
+        <div className="bg-gray-700 py-16 px-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">SEARCH</h1>
+          <h1 className="text-4xl md:text-5xl font-bold">PRODUCT SN</h1>
+        </div>
+        
+        {/* Content Section */}
+        <div className="px-4 py-8">
+          <p className="text-gray-300 mb-4 leading-relaxed">
+            Dear users, you can identify the authenticity of the product by entering the module's serial number.
+          </p>
+          
+          <p className="text-gray-300 mb-8 leading-relaxed">
+            The product(s) in association with the serial number(s) you inquired about are eligible for Jinko Solar's warranty and after-sales services within the Pakistan and the sales region this country located. Beyond this area, the warranty and after-sales service will not be available.
+          </p>
+          
+          {/* Product Details */}
+          <div className="space-y-4">
+            <div className="flex justify-between py-3 border-b border-gray-600">
+              <span className="text-gray-400">Country Entered</span>
+              <span className="text-white">{country}</span>
             </div>
-            <div className="flex justify-between py-2 border-b border-gray-200">
-              <span className="text-gray-600">Entered Sales</span>
-              <span className="font-medium">Pakistan</span>
+            
+            <div className="flex justify-between py-3 border-b border-gray-600">
+              <span className="text-gray-400">Sales Destination</span>
+              <span className="text-white">{country}</span>
             </div>
-            <div className="flex justify-between py-2 border-b border-gray-200">
-              <span className="text-gray-600">Destination</span>
-              <span className="font-medium">Nizam Energy (PVT) LTD</span>
+            
+            <div className="flex justify-between py-3 border-b border-gray-600">
+              <span className="text-gray-400">Importer Name</span>
+              <span className="text-white">IRI Traders</span>
             </div>
-            <div className="flex justify-between py-2 border-b border-gray-200">
-              <span className="text-gray-600">Production Date</span>
-              <span className="font-medium">2025-03-04</span>
+            
+            <div className="flex justify-between py-3 border-b border-gray-600">
+              <span className="text-gray-400">Production Date</span>
+              <span className="text-white">2024-01-27</span>
             </div>
-            <div className="flex justify-between py-2 border-b border-gray-200">
-              <span className="text-gray-600">Delivery Date</span>
-              <span className="font-medium">2025-04-02</span>
+            
+            <div className="flex justify-between py-3 border-b border-gray-600">
+              <span className="text-gray-400">Delivery Date</span>
+              <span className="text-white">2024-02-05</span>
             </div>
-            <div className="flex justify-between py-2 border-b border-gray-200">
-              <span className="text-gray-600">SN</span>
-              <span className="font-medium">{serialNumber}</span>
+            
+            <div className="flex justify-between py-3 border-b border-gray-600">
+              <span className="text-gray-400">SN</span>
+              <span className="text-white">{serialNumber}</span>
             </div>
-            <div className="flex justify-between py-2 border-b border-gray-200">
-              <span className="text-gray-600">Product</span>
-              <span className="font-medium">JKM580N-72HL4-BDV</span>
+            
+            <div className="flex justify-between py-3 border-b border-gray-600">
+              <span className="text-gray-400">Product</span>
+              <span className="text-white">JKM585N-72HL4-BDV</span>
             </div>
-            <div className="flex justify-between py-2 border-b border-gray-200">
-              <span className="text-gray-600">Level</span>
-              <span className="font-medium">Class A</span>
+            
+            <div className="flex justify-between py-3 border-b border-gray-600">
+              <span className="text-gray-400">Level</span>
+              <span className="text-white">Class A</span>
             </div>
-            <div className="flex justify-between py-2 border-b border-gray-200 md:col-span-2">
-              <span className="text-gray-600">Result</span>
-              <span className="font-medium text-green-600">Genuine JinkoSolar Product</span>
+            
+            <div className="flex justify-between py-3 border-b border-gray-600">
+              <span className="text-gray-400">Result</span>
+              <span className="text-white">Jinko Product</span>
             </div>
           </div>
           
-          <div className="text-center pt-4">
+          {/* Back Button */}
+          <div className="mt-8 text-center">
             <Button 
               onClick={() => setIsVerified(false)}
-              variant="outline"
-              className="px-8"
+              className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-md w-full max-w-xs"
             >
-              Verify Another Product
+              Back
             </Button>
           </div>
-        </CardContent>
-      </Card>
+        </div>
+      </div>
     );
   }
 
