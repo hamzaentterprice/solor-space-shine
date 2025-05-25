@@ -13,12 +13,14 @@ export const Hero = ({
   title, 
   subtitle, 
   buttonText, 
-  backgroundImage = "/lovable-uploads/9e2bc85d-c0bb-4ebb-a71d-a7ef436332df.png",
+  backgroundImage = "/src/components/assets/verificaation-page-banner.jpg",
   onButtonClick 
 }: HeroProps) => {
   return (
     <section 
       className="relative h-96 flex items-center justify-center bg-cover bg-center"
+      // style={{ backgroundImage: `url(${backgroundImage})` }}
+
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/70 to-blue-800/70"></div>
